@@ -9,7 +9,7 @@ namespace PmP_gyak_06
             #region 1.
             Book b = new Book("The Hobbit - or There and Back Again", "J.R.R. Tolkien", 1937, 312);
             Console.WriteLine(b.AllData());
-
+            Console.ReadKey();
             #endregion 1.
 
             #region 2.
@@ -19,13 +19,15 @@ namespace PmP_gyak_06
             Teglalap t2 = new Teglalap(0, 3, "Green");
             Console.WriteLine(t2.IsValid());
             t2.Draw(10, 15);
+
+            Console.ReadKey();
             #endregion 2.
 
             #region 3.
             Runner runner1 = new Runner("Alice", 0, 5);
             Runner runner2 = new Runner("Bob", 1, 3);
 
-            int targetDistance = 4;
+            int targetDistance = 50;
 
             while (runner1.GetDistance() < targetDistance && runner2.GetDistance() < targetDistance)
             {
@@ -36,8 +38,11 @@ namespace PmP_gyak_06
                 runner1.Show();
                 runner2.Show();
 
-                Thread.Sleep(1000); 
+                Thread.Sleep(500); 
             }
+
+            Console.ReadKey();
+            Console.Clear();
             #endregion 3.
 
             #region 4.
@@ -48,6 +53,7 @@ namespace PmP_gyak_06
             string decodedMessage = cipher.Decode(encodedMessage);
             Console.WriteLine("Visszafejtett üzenet: " + decodedMessage);
 
+            Console.ReadKey();
             #endregion 4.
 
             #region 5.
